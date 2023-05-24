@@ -11,10 +11,6 @@ export const ProductsContext = createContext({
 export const ProductsProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
 
-  // useEffect(() => {
-  //   addCollectionAndDocuments('collections', SHOP_DATA);
-  // }, []);
-
   const value = { products };
   return (
     <ProductsContext.Provider value={value}>
